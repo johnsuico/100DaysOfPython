@@ -47,9 +47,7 @@ def rock_paper_scissors() :
         print("Computer chose:")
         print(game_images[computer_choice])
 
-        if (user_choice >= 4 or user_choice <= 0) :
-            print("You didn't enter in a valid choice.")
-        elif (user_choice == 1 and computer_choice == 2) :
+        if (user_choice == 1 and computer_choice == 2) :
             print("You lost.")
         elif (user_choice == 1 and computer_choice == 3) :
             print("You won.")
