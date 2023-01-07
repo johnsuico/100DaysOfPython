@@ -32,9 +32,12 @@ while(display.count('_') and lives != 0):
     for i in range(len(chosen_word)):
         if letter_guess == chosen_word[i]:
             display[i] = letter_guess
+
+    if letter_guess in used_letters:
+        print(f"You have already used the letter: {letter_guess}")
     
     # If letter is not in the word, remove a life
-    if letter_guess not in chosen_word:
+    if letter_guess not in chosen_word and letter_guess not in used_letters:
         lives -= 1
         used_letters += letter_guess
         print(f"Lives left: {lives}")
