@@ -1,8 +1,7 @@
 # Creating a hangman game.
-import random, stages, word_list
+import random, stages, word_list, os
 
-# list of random words.
-# word_list = ["ardvark", "baboon", "camel"]
+clear = lambda: os.system('cls')
 
 # Choosing a random word.
 chosen_word = random.choice(word_list.word_list)
@@ -27,6 +26,8 @@ print(' '.join(display))
 while(display.count('_') and lives != 0):
     letter_guess = input("Guess a letter: ").lower()
 
+    clear()
+
     # Goes through and checks if letter is in the word.
     # If true, place letter into slot
     for i in range(len(chosen_word)):
@@ -40,10 +41,10 @@ while(display.count('_') and lives != 0):
     if letter_guess not in chosen_word and letter_guess not in used_letters:
         lives -= 1
         used_letters += letter_guess
-        print(f"Lives left: {lives}")
 
     print(' '.join(display))
     print(stages.stages[lives])
+    print(f"Lives left: {lives}")
     print(f"Used letters: {' '.join(used_letters)}")
 
 # User won
