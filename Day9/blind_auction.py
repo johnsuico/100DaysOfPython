@@ -25,7 +25,7 @@ more_bids = add_bidder()
 
 while more_bids:
     clear()
-    bidders = add_bidder()
+    more_bids = add_bidder()
 
 max_bid = 0
 max_bid_person = ""
