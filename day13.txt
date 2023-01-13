@@ -1,0 +1,1 @@
+Day 13 was just about learning how to debug code. THe exercises were looking at code and finding the errors.
