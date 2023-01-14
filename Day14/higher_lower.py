@@ -14,6 +14,8 @@ while not lost:
 
     print(f"{first_choice['name']}")
 
+    print(f"Current score: {score}")
+
     print(f"Compare A: {first_choice['name']}, a {first_choice['description']}, from {first_choice['country']}")
 
     print(art.vs)
