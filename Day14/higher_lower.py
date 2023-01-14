@@ -5,14 +5,13 @@ clear = lambda: os.system('cls')
 score = 0
 lost = False
 
+first_choice = random.choice(game_data.data)
+
 while not lost:
-    first_choice = random.choice(game_data.data)
     second_choice = random.choice(game_data.data)
 
     clear()
     print(art.logo)
-
-    print(f"{first_choice['name']}")
 
     print(f"Current score: {score}")
 
@@ -30,8 +29,13 @@ while not lost:
     elif choice == 'b' and second_choice['follower_count'] > first_choice['follower_count']:
         score += 1
         lost = False
+    elif first_choice['follower_count'] == second_choice['follower_count']:
+        score += 1
+        lost = False
     else:
         lost = True
+
+    first_choice = second_choice
 
 clear()
 print(art.logo)
