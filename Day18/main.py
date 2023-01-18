@@ -19,20 +19,21 @@ colors = [
 
 def draw_dots(num_dots, offset):
     for i in range(num_dots):
-        t.dot(15, random.choice(colors))
-        t.fd(25)
+        t.dot(25, random.choice(colors))
+        t.fd(50)
     
     t.home()
     y_pos = t.ycor()
     t.sety(y_pos+offset)
 
 def create_painting(num_rows, num_columns):
-    offset = 25
+    offset = 50
     for i in range(num_rows):
         draw_dots(num_columns, offset)
-        offset += 25
+        offset += 50
 
 t = Turtle()
+t.hideturtle()
 t.pu()
 t.speed('fastest')
 screen = Screen()
