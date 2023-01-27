@@ -1,0 +1,1 @@
+Goal was to create an app using openweatherapi. Could not get the API key to work and other people have had the same problem. Will be skipping this day.
