@@ -7,7 +7,6 @@ kanye_path = os.path.join(dirname, './kanye.png')
 
 
 def get_quote():
-    pass
     kanye_quote = requests.get(url = 'https://api.kanye.rest')
     kanye_quote.raise_for_status()
     quote = kanye_quote.json()
