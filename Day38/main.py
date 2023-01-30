@@ -8,6 +8,7 @@ API_KEY = os.getenv('DAY38_API_KEY')
 API_ID = os.getenv('DAY38_API_ID')
 URL = 'https://trackapi.nutritionix.com/v2/natural/exercise'
 SHEETY_ENDPOINT = os.getenv('SHEETY_ENDPOINT')
+SHEETY_AUTH = os.getenv('SHEETY_AUTH')
 
 headers = {
     'x-app-id': API_ID,
@@ -33,7 +34,7 @@ exercise_calories = exercise_data['nf_calories']
 exercise_time = now_time
 
 sheety_auth_headers = {
-    'Authorization': 'Bearer secret_pass'
+    'Authorization': SHEETY_AUTH
 }
 
 sheety_add_row = {
