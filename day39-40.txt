@@ -1,0 +1,1 @@
+Goal was to build another app using APIs and Twilio to text. Did not want to make a twilio account.
