@@ -1,0 +1,1 @@
+Goal was to create a program to scrap data (price and location) off of Zillow. Started the project but soon started getting blocked by zillow through Captchas and was not able to use Selenium or BeautifulSoup to scrap data. Could not get passed the captchas.
