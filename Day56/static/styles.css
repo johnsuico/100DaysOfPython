@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgba(131,58,180,0.3) 0%, rgba(253,29,29,0.3) 50%, rgba(252,176,69,0.3) 100%), url('./images//background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%
+}
+
+.card-container {
+    background-color: white;
+    padding: 50px;
+}
+
+.card-name {
+    text-align: center;
+}
+
+.card-substitle {
+    text-align: center;
+    size: 12px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fake-button {
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    transition: 0.3s;
+}
+
+.fake-button:hover {
+    background-color: black;
+}
